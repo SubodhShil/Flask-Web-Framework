@@ -1,13 +1,13 @@
 from pathlib import Path
 
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-c3$8t+i&(by*wj+h3ue6p_i08wvx*3zw4o(9*8)nkso9xxd&_t'
+SECRET_KEY = 'django-insecure-r#&f$zfj#q6n3t=63pq64%sn8&5e3s6qpm79raqlf43!17)nko'
 
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
 
 # Application definition
 
@@ -31,12 +31,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'project_01.urls'
+ROOT_URLCONF = 'project_2.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates', ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -49,7 +49,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project_01.wsgi.application'
+WSGI_APPLICATION = 'project_2.wsgi.application'
 
 
 # Database
