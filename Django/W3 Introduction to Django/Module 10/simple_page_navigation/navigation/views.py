@@ -1,10 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpRequest
+from django.http import HttpResponse
 
 
-def home(request):
-    # return HttpRequest("Navigation home page")
-    pass
+def about(request):
+    return HttpResponse("Navigation about page")
+
 
 def contact(request):
-    pass
+    return HttpResponse("Contact")
